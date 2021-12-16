@@ -30,6 +30,7 @@
    </vm>
 
    <plugins>
+      <plugin id="guideIPE"/>
       <plugin id="javax.servlet"/>
       <plugin id="javax.xml"/>
       <plugin id="org.apache.commons.codec"/>

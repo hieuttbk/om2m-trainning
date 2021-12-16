@@ -214,5 +214,9 @@
 <!-- 		<module>org.eclipse.om2m.dal.driver.sample</module> -->
 <!-- 		<module>org.eclipse.om2m.ipe.dal</module> -->
 <!-- 		<module>com.orange.om2m.p2.repo</module> -->
+<!-- 		<module>org.eclipse.om2m.adntest</module> -->
+<!-- 		<module>org.eclipse.om2m.client.java</module> -->
+<!-- 		<module>../../workspace-rcp-forTest/guideIPE</module> -->
+		<module>../guideIPE</module>
 	</modules>
 </project>
