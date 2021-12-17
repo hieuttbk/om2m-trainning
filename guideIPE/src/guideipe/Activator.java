@@ -16,7 +16,7 @@ public class Activator implements BundleActivator {
 	static BundleContext getContext() {
 		return context;
 	}
- 
+ // comment
 	public void start(BundleContext bundleContext) throws Exception {
 		Activator.context = bundleContext;
 		System.out.println("Starting Sample Ipe");
