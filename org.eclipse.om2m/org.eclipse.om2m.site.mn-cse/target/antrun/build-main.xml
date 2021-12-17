@@ -2,14 +2,14 @@
 <project name="maven-antrun-" default="main"  >
 <target name="main">
   <echo>Copying scripts into mn product</echo>
-  <copy file="C:\Users\Thinkpad\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/script" tofile="C:\Users\Thinkpad\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/target/products/mn-cse/${tycho.env.osgi.os}/${tycho.env.osgi.ws}/${tycho.env.osgi.arch}/startMN.sh"/>
-  <copy file="C:\Users\Thinkpad\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/script" tofile="C:\Users\Thinkpad\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/target/products/mn-cse/${tycho.env.osgi.os}/${tycho.env.osgi.ws}/${tycho.env.osgi.arch}/startMN.bat"/>
-  <copy file="C:\Users\Thinkpad\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/log4j.configuration" tofile="C:\Users\Thinkpad\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/target/products/mn-cse/${tycho.env.osgi.os}/${tycho.env.osgi.ws}/${tycho.env.osgi.arch}/log4j.configuration"/>
-  <copy file="C:\Users\Thinkpad\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/libs/pax-confman-propsloader-0.2.3.jar" todir="C:\Users\Thinkpad\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/target/products/mn-cse/${osgi.os}/${osgi.ws}/${osgi.arch}/plugins/"/>
-  <copy todir="C:\Users\Thinkpad\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/target/products/mn-cse/${tycho.env.osgi.os}/${tycho.env.osgi.ws}/${tycho.env.osgi.arch}/configurations">
-    <fileset includes="**/*" dir="C:\Users\Thinkpad\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/configurations"/>
+  <copy file="C:\Users\Thinkpad\git\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/script" tofile="C:\Users\Thinkpad\git\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/target/products/mn-cse/${tycho.env.osgi.os}/${tycho.env.osgi.ws}/${tycho.env.osgi.arch}/startMN.sh"/>
+  <copy file="C:\Users\Thinkpad\git\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/script" tofile="C:\Users\Thinkpad\git\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/target/products/mn-cse/${tycho.env.osgi.os}/${tycho.env.osgi.ws}/${tycho.env.osgi.arch}/startMN.bat"/>
+  <copy file="C:\Users\Thinkpad\git\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/log4j.configuration" tofile="C:\Users\Thinkpad\git\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/target/products/mn-cse/${tycho.env.osgi.os}/${tycho.env.osgi.ws}/${tycho.env.osgi.arch}/log4j.configuration"/>
+  <copy file="C:\Users\Thinkpad\git\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/libs/pax-confman-propsloader-0.2.3.jar" todir="C:\Users\Thinkpad\git\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/target/products/mn-cse/${osgi.os}/${osgi.ws}/${osgi.arch}/plugins/"/>
+  <copy todir="C:\Users\Thinkpad\git\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/target/products/mn-cse/${tycho.env.osgi.os}/${tycho.env.osgi.ws}/${tycho.env.osgi.arch}/configurations">
+    <fileset includes="**/*" dir="C:\Users\Thinkpad\git\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/configurations"/>
   </copy>
-  <propertyfile file="C:\Users\Thinkpad\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/target/products/mn-cse/${tycho.env.osgi.os}/${tycho.env.osgi.ws}/${tycho.env.osgi.arch}/configuration/config.ini">
+  <propertyfile file="C:\Users\Thinkpad\git\om2m-trainning\org.eclipse.om2m\org.eclipse.om2m.site.mn-cse/target/products/mn-cse/${tycho.env.osgi.os}/${tycho.env.osgi.ws}/${tycho.env.osgi.arch}/configuration/config.ini">
     <entry type="string" operation="+" value=", reference:file:pax-confman-propsloader-0.2.3.jar@1:start" key="osgi.bundles"/>
   </propertyfile>
 </target>
